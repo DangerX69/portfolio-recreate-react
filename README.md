@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-# React + Vite
+# Personal Portfolio Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is to mainly learn and implement the basics of html, css and javascript. I will be doing other tutorial based projects side by side to this while trying to complete it.
 
-Currently, two official plugins are available:
+I have decided to use React for the ease of development as well as TailwindCSS for an easier time designing it. I will try to update this readme file with completion of each major components, or maybe just update it once the project is complete. :)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# portfolio-recreate-react
-Contains folders and files used for my project. Project Objective is to recreate the portfolio website i created using online templates by myself using react js.
->>>>>>> 907e34e22a9f75b442eae561722496f95c7833b6
+
+
