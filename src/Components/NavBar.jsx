@@ -5,23 +5,16 @@ import { navLinks } from "../Constants";
 const Navbar = () => {
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollThreshold = 80;
+			const scrollThreshold = 75;
 			const navbar = document.getElementById("navigationbar");
 
-			if (window.scrollY == scrollThreshold) {
-				navbar.classList.toggle("opacity-0");
-				navbar.classList.toggle("h-0");
-				navbar.classList.toggle("scale-0");
-			} else if (window.scrollY > scrollThreshold) {
+
+			if (window.scrollY > scrollThreshold) {
 				navbar.classList.add("fixed");
-				navbar.classList.toggle("opacity-0");
-				navbar.classList.toggle("h-0");
-				navbar.classList.toggle("scale-0");
+
 			} else if (window.scrollY < scrollThreshold) {
 				navbar.classList.remove("fixed");
-				navbar.classList.toggle("opacity-0");
-				navbar.classList.toggle("h-0");
-				navbar.classList.toggle("scale-0");
+
 			}
 		};
 
@@ -40,7 +33,7 @@ const Navbar = () => {
 	return (
 		<header
 			id="navigationbar"
-			className="bg-mygreen text-white w-full transition-all duration-1000"
+			className="absolute bg-mygreen text-white w-full top-0"
 		>
 			<nav className="flex py-5 justify-around items-center ">
 				<a
@@ -56,7 +49,7 @@ const Navbar = () => {
 						<li key={linkDetail.key}>
 							<a
 								href={linkDetail.href}
-								className="font-open-sans decoration-amber-50/0 hover:underline hover:decoration-amber-50/100  hover:underline-offset-4 hover:decoration-2 hover:font-bold duration-500"
+								className="font-open-sans underline-offset-4 hover:underline hover:decoration-amber-50/100  hover:underline-offset-4 hover:decoration-2 hover:font-bold duration-500 focus:underline focus:decoration-2"
 							>
 								{linkDetail.label}
 							</a>
@@ -84,7 +77,7 @@ const Navbar = () => {
 							<li key={linkDetail.key}>
 								<a
 									href={linkDetail.href}
-									className="font-open-sans text-white border-2 border-black flex justify-center p-2 m-1 "
+									className="font-open-sans text-white border-2 border-white rounded-2xl hover:bg-mygreen/90 active:bg-mygreen/60 flex justify-center p-2 m-1 "
 								>
 									{linkDetail.label}
 								</a>
