@@ -1,14 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 
-const TypingAnimation = () => {
-  const phrases = ["code", "option 1", "option 2"];
+const TypingAnimation = ({phraseBeginning, phrases, typingSpeed, deletingSpeed, delayBetweenPhrases}) => {
+  
+  const numberPhrases = phraseBeginning.length;
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-  const typingSpeed = 100;
-  const deletingSpeed = 50;
-  const delayBetweenPhrases = 1000;
+
   const cursorRef = useRef(null);
 
   useEffect(() => {
@@ -38,12 +37,11 @@ const TypingAnimation = () => {
   }, [charIndex, isDeleting, phrases, currentPhraseIndex]);
 
   return (
-    <h1 className="text-6xl text-center">
-      Hey, I'm Biswash <br /> I Like To{" "}
-      <span className="text-blue-800">
+    <h1 className="text-4xl  text-white font-light">
+      {phraseBeginning}{" "}
+      <span className="text-white font-medium">
         {text}
-        <span ref={cursorRef} className="animate-blink">
-          |
+        <span ref={cursorRef} className="animate-blink">|
         </span>
       </span>
     </h1>

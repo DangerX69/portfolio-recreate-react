@@ -1,3 +1,6 @@
+import TypingAnimation from '../Components/TypingAnimation'
+import { phraseBeginning, phrases } from '../Constants'
+
 const HeroSection = () => {
 	return (
 		<section
@@ -8,7 +11,7 @@ const HeroSection = () => {
 				Biswash Khanal
 			</h1>
 			<div className="text-4xl  text-white">
-				I am a <strong>Computer Engineer</strong>
+			<TypingAnimation phraseBeginning = {phraseBeginning} phrases={phrases} typingSpeed={50} deletingSpeed={50} delayBetweenPhrases={1000}/>
 			</div>
 			<p className=" text-white text-xl mt-3 text-center">
 				Welcome to my website. Please take a look around!

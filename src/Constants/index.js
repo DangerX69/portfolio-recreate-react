@@ -5,3 +5,6 @@ export const navLinks = [
 	{ href: "#portfolio", label: "Portfolio", key: 4 },
 	{ href: "#contact-me", label: "Contact", key: 5 },
 ];
+
+export const phraseBeginning = "I am a";
+export const phrases = ["Computer Engineer", "Web Developer", "Gamer", "UI/UX Designer", "Programmer"];
