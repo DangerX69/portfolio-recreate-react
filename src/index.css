@@ -9,5 +9,21 @@
 	--font-poppins: "Poppins", "sans-serif";
 	--font-open-sans: "Open Sans", "sans-serif";
 	--color-mygreen: #3fc35f;
+
+
+	--animate-blink: blink 0.5s linear infinite;
+	@keyframes blink {
+	  0%{
+		opacity: 100%;
+	  }
+	  50%{
+		opacity:0%
+	  }
+	  100% {
+		opacity: 100%;
+	  }
+
+	}
+
 }
 
