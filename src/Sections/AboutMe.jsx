@@ -1,14 +1,18 @@
+import { profilePicture } from "../assets/icons";
+
 const AboutMe = () => {
 	return (
 		<section
 			id="about-me"
-			className="h-[100vh] border-8 border-blue-700 bg-whitewashed flex flex-col gap-5 items-center"
+			className="py-20 h-[100vh] border-8 border-blue-700 bg-whitewashed flex-col flex gap-15 items-center"
 		>
 			<div
 				id="about-me_text"
 				className="border-2 max-w-5xl"
 			>
-				<h1 className="py-5 border-2 text-3xl font-poppins font-medium underline-offset-8 decoration-5 decoration-mygreen underline">ABOUT ME</h1>
+				<h1 className="py-5 border-2 text-3xl text-center font-poppins font-medium underline-offset-8 decoration-5 decoration-mygreen underline">
+					ABOUT ME
+				</h1>
 
 				<p className="p-4 border-2 text-xl text-justify ">
 					Namaskar! My name is Biswash Khanal. I am currently a student at
@@ -27,30 +31,50 @@ const AboutMe = () => {
 
 			<div
 				id="about-me_table"
-				className="border-2"
+				className="border-2 bg-white flex flex-col sm:flex-row p-2"
 			>
 				<div
 					id="about-us-content-left"
-					className="border-2"
-				></div>
+					className="border-2 flex flex-1/2 p-2"
+				>
+					<img
+						src={profilePicture}
+						alt="profilepic"
+						width={500}
+						height={500}
+						className="p-5"
+					/>
+				</div>
 
 				<div
 					id="about-us-content-right"
-					className="border-2"
+					className="border-2 flex flex-col p-2 flex-1/2"
 				>
 					<div
 						id="skill-bar"
-						className="border-2"
-					></div>
+						className="border-2 p-2"
+					>
+						<h1>Skills</h1>
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
 					<div
 						id="social"
-						className="border-2"
-					></div>
+						className="border-2 p-2"
+					>
+                        <ul>
+                            <li>facebook</li>
+                            <li>twitter</li>
+                        </ul>
+                    </div>
 
 					<a
 						href="/"
-						className="border-2"
-					></a>
+						className="border-2 p-2"
+					>Download Resume</a>
 				</div>
 			</div>
 		</section>
