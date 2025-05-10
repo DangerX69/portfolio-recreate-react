@@ -4,7 +4,7 @@ import { phraseBeginning, phrases } from '../Constants'
 const HeroSection = () => {
 	return (
 		<section
-			id="Home"
+			id="home"
 			className="h-[100vh] bg-mygreen/70 flex flex-col gap-5 justify-center items-center text-center"
 		>
 			<h1 className="text-8xl font-medium text-white font-poppins">

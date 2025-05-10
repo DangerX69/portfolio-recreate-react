@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './components/Navbar'
 import HeroSection from './Sections/HeroSection'
+import AboutMe from './Sections/AboutMe'
 
 
 const App = () => {
@@ -8,7 +9,9 @@ const App = () => {
 <>
 
 <NavBar/>
-<HeroSection/>
+{/* <HeroSection/> */}
+<AboutMe/>
+
 </>
   )
 }
