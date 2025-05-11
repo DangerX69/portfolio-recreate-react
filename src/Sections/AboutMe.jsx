@@ -1,4 +1,6 @@
 import { profilePicture } from "../assets/icons";
+import ProgressBar from "../Components/ProgressBar";
+import { skillBarProgress } from "../Constants";
 
 const AboutMe = () => {
 	return (
@@ -35,13 +37,11 @@ const AboutMe = () => {
 			>
 				<div
 					id="about-us-content-left"
-					className="border-2 flex flex-1/2 p-2"
+					className="border-2 flex flex-auto p-2"
 				>
 					<img
 						src={profilePicture}
 						alt="profilepic"
-						width={500}
-						height={500}
 						className="p-5"
 					/>
 				</div>
@@ -52,29 +52,33 @@ const AboutMe = () => {
 				>
 					<div
 						id="skill-bar"
-						className="border-2 p-2"
+						className="border-2 p-2 flex-3/4 flex flex-col text-center content-around"
 					>
-						<h1>Skills</h1>
-						<ul>
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-						</ul>
+						<h1 className={`border-2 flex flex-1/${skillBarProgress.length}`}>Skills</h1>
+						<div className={`border-2 flex flex-${skillBarProgress.length-1}/${skillBarProgress.length}`}>
+							<ProgressBar skills={skillBarProgress} />
+						</div>
 					</div>
 					<div
 						id="social"
-						className="border-2 p-2"
+						className="border-2 p-2 flex-1/8 flex flex-col text-center content-around"
 					>
-                        <ul>
-                            <li>facebook</li>
-                            <li>twitter</li>
-                        </ul>
-                    </div>
+						<ul>
+							<li>facebook</li>
+							<li>twitter</li>
+						</ul>
+					</div>
+
+<div className="border-2 p-2 flex-1/8 flex flex-col text-center content-around">
 
 					<a
 						href="/"
-						className="border-2 p-2"
-					>Download Resume</a>
+						
+					>
+						Download Resume
+					</a>
+
+</div>
 				</div>
 			</div>
 		</section>
