@@ -3,6 +3,9 @@ import ProgressBar from "../Components/ProgressBar";
 import { skillBarProgress } from "../Constants";
 
 const AboutMe = () => {
+
+	const len =skillBarProgress.length;
+
 	return (
 		<section
 			id="about-me"
@@ -54,8 +57,8 @@ const AboutMe = () => {
 						id="skill-bar"
 						className="border-2 p-2 flex-3/4 flex flex-col text-center content-around"
 					>
-						<h1 className={`border-2 flex flex-1/${skillBarProgress.length}`}>Skills</h1>
-						<div className={`border-2 flex flex-${skillBarProgress.length-1}/${skillBarProgress.length}`}>
+						<h1 className={`border-2 flex flex-1/${len}`}>Skills</h1>
+						<div className={`border-2 flex flex-${len-1}/${len}`}>
 							<ProgressBar skills={skillBarProgress} />
 						</div>
 					</div>

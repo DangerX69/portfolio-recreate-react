@@ -6,11 +6,14 @@ const ProgressBar = ({skills}) => {
   console.log(len)
 
   return (
-						<ul className={`border-2 self-center flex-${len-1}/${len} flex-col flex `}>
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-						</ul>
+<ul>
+	{skills.map((skill) => (
+		<li key={skill.key} className="w-full">
+			<span>{skill.skill}</span>
+			<div className="bg-amber-200 block">{skill.progress}%</div>
+		</li>
+	))}
+</ul>
   )
 }
 
