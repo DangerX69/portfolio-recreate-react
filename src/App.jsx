@@ -9,7 +9,7 @@ const App = () => {
 <>
 
 <NavBar/>
-{/* <HeroSection/> */}
+<HeroSection/>
 <AboutMe/>
 
 </>

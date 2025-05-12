@@ -9,17 +9,17 @@ const AboutMe = () => {
 	return (
 		<section
 			id="about-me"
-			className="py-20 h-[100vh] border-8 border-blue-700 bg-whitewashed flex-col flex gap-15 items-center"
+			className="py-20 h-[100vh] bg-whitewashed flex-col flex gap-15 items-center"
 		>
 			<div
 				id="about-me_text"
-				className="border-2 max-w-5xl"
+				className="max-w-5xl"
 			>
-				<h1 className="py-5 border-2 text-3xl text-center font-poppins font-medium underline-offset-8 decoration-5 decoration-mygreen underline">
+				<h1 className="py-5 text-3xl text-center font-poppins font-medium underline-offset-8 decoration-5 decoration-mygreen underline">
 					ABOUT ME
 				</h1>
 
-				<p className="p-4 border-2 text-xl text-justify ">
+				<p className="text-xl text-justify ">
 					Namaskar! My name is Biswash Khanal. I am currently a student at
 					Tribhuwan University, Nepal. I am currently enrolled in a Computer
 					Engineering course and will graduate in 7 months. I am a very curious
@@ -36,7 +36,7 @@ const AboutMe = () => {
 
 			<div
 				id="about-me_table"
-				className="border-2 bg-white flex flex-col sm:flex-row p-2"
+				className="bg-white flex flex-col sm:flex-row p-2"
 			>
 				<div
 					id="about-us-content-left"
