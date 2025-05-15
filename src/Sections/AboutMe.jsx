@@ -3,8 +3,7 @@ import ProgressBar from "../Components/ProgressBar";
 import { skillBarProgress } from "../Constants";
 
 const AboutMe = () => {
-
-	const len =skillBarProgress.length;
+	const len = skillBarProgress.length;
 
 	return (
 		<section
@@ -36,7 +35,7 @@ const AboutMe = () => {
 
 			<div
 				id="about-me_table"
-				className="bg-white flex flex-col sm:flex-row p-2"
+				className="bg-white flex flex-col sm:flex-row w-5xl h-[100vh]"
 			>
 				<div
 					id="about-us-content-left"
@@ -55,10 +54,14 @@ const AboutMe = () => {
 				>
 					<div
 						id="skill-bar"
-						className="border-2 p-2 flex-3/4 flex flex-col text-center content-around"
+						className="border-2 p-2 flex-3/4 flex flex-col text-center gap-10"
 					>
-						<h1 className={`border-2 flex flex-1/${len}`}>Skills</h1>
-						<div className={`border-2 flex flex-${len-1}/${len}`}>
+						<h1
+							className={`border-2 flex flex-1/${len} self-left text-2xl font-semibold font-open-sans p-1`}
+						>
+							Skills
+						</h1>
+						<div className={`border-2 flex flex-${len - 1}/${len}`}>
 							<ProgressBar skills={skillBarProgress} />
 						</div>
 					</div>
@@ -72,16 +75,9 @@ const AboutMe = () => {
 						</ul>
 					</div>
 
-<div className="border-2 p-2 flex-1/8 flex flex-col text-center content-around">
-
-					<a
-						href="/"
-						
-					>
-						Download Resume
-					</a>
-
-</div>
+					<div className="border-2 p-2 flex-1/8 flex flex-col text-center content-around">
+						<a href="/">Download Resume</a>
+					</div>
 				</div>
 			</div>
 		</section>
